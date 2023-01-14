@@ -3,9 +3,14 @@
 
   outputs = { self }: {
     templates = {
-      quickpython = {
-        path = ./quickpython;
-        description = "nix shell with python for quick maths, prototyping, etc.";
+      python-pure = {
+        path = ./python-impure;
+        description = "manage python environment with nix";
+      };
+
+      python-impure = {
+        path = ./python-impure;
+        description = "manage python environment with nix + pip";
       };
     };
   };
