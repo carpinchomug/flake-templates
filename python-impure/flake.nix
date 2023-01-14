@@ -29,8 +29,10 @@
           # Those are dependencies that we would like to use from nixpkgs,
           # which will add them to PYTHONPATH and thus make them accessible
           # from within the venv.
-          python3Packages.numpy
-          python3Packages.requests
+          python3Packages.python-lsp-server
+          python3Packages.python-lsp-server.optional-dependencies.all
+          python3Packages.pyls-isort
+          python3Packages.python-lsp-black
 
           # Add more packages below as needed.
         ];
