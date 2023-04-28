@@ -3,9 +3,9 @@
 
   outputs = { self }: {
     templates = {
-      python-pure = {
-        path = ./python-impure;
-        description = "manage python environment with nix";
+      skeleton = {
+        path = ./skeleton;
+        description = "minimal template for making a nix shell environment";
       };
 
       python-impure = {
